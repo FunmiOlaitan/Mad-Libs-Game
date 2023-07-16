@@ -12,3 +12,21 @@ def generate_story(adjective, noun1, verb1, adverb1, verb2, noun2, adjective2, v
     return story
 
 # print the final story
+def play_mad_libs_game()
+    adjective = prompt_word("adjective")
+    noun1 = prompt_word("noun")
+    verb1 = prompt_word("verb")
+    adverb1 = prompt_word("adverb")
+    verb2 = prompt_word("verb")
+    noun2 = prompt_word("noun")
+    adjective2 = prompt_word("adjective")
+    verb3 = prompt_word("verb")
+    adverb2 = prompt_word("adverb")
+    verb4 = prompt_word("verb")
+    adjective3 = prompt_word("adjective")
+
+    story = generate_story(adjective, noun1, verb1, adverb1, verb2, noun2, adjective2, verb3, adverb2, verb4, adjective3)
+    print("\nYour Mad Libs Story:")
+    print(story)
+
+play_mad_libs_game()
